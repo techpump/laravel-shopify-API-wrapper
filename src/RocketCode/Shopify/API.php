@@ -294,7 +294,7 @@ class API
                 continue;
             }
 
-            list($key, $val) = explode(':', $header);
+            list($key, $val) = explode(':', $header, 2);
             $_INFO[trim($key)] = trim($val);
         }
 
